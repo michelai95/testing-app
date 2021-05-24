@@ -1,47 +1,32 @@
-import React, { Component } from 'react'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import AppBar from './AppBar.js';
-import RaisedButton from 'material-ui/RaisedButton';
-import TextField from 'material-ui/TextField';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-
-class Login extends Component {
-constructor(props){
-  super(props);
-  this.state={
-  username:'',
-  password:''
-  }
- }
-render() {
-    return (
-      <div>
-        <MuiThemeProvider>
-          <div>
-          <AppBar
-             title="Login"
-           />
-           <TextField
-             hintText="Enter your Username"
-             floatingLabelText="Username"
-             onChange = {(event,newValue) => this.setState({username:newValue})}
-             />
-           <br/>
-             <TextField
-               type="password"
-               hintText="Enter your Password"
-               floatingLabelText="Password"
-               onChange = {(event,newValue) => this.setState({password:newValue})}
-               />
-             <br/>
-             <RaisedButton label="Submit" primary={true} style={style} onClick={(event) => this.handleClick(event)}/>
-         </div>
-         </MuiThemeProvider>
+export default function Login() {
+  return (
+    <div>
+      <div className="login">
+        <p>Please login to use the testing app</p>
+        <form name="loginForm" method="GET">
+          <ul className="loginFormContainer">
+            <li className="loginForm">
+              <label for="name">Username:</label>
+              <input type="text" className="name" name="userName"></input>
+            </li>
+            <li className="loginForm">
+              <label for="password">Password:</label>
+              <input type="text" className="password" name="password"></input>
+            </li>
+          </ul>
+        </form>
+        <div className="loginButtons">
+          <button className="loginButton" type="submit">Submit</button>
+        </div>
+        <div className="formFooter">
+          <Link className="signUpLink" className="formFooterLink" to="/SignUp">Sign Up</Link>
+          <Link className="forgotPassword" className="formFooterLink" to="/ForgotPassword">Forgot Password?</Link>
+        </div>
       </div>
-    );
-  }
+    </div>
+
+  )
 }
-const style = {
- margin: 15,
-};
-export default Login;
