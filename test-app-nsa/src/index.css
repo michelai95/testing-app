@@ -32,12 +32,17 @@ code {
 .homepageLoginButton {
   height: 40px;
   width: 90px;
-  font-size: 1.2rem;
   border-radius: 5px;
   text-transform: uppercase;
   background-color: rgb(89, 179, 211);
   border: 0;
   color: white;
+  letter-spacing: 1px;
+  transform: translate3d(0, 0, 0);
+  transition: .1s background,
+  .1s transform;
+  font: 400 1.125em/1.5 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  position: relative;
 }
 input[type="text"] {
   width: 90%;
@@ -62,6 +67,7 @@ input[type="text"] {
   text-transform: uppercase;
   font-weight: bold;
   border: 0;
+  font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 .loginForm {
   list-style: none;
