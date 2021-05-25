@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
+  color: white;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -61,7 +62,7 @@ input[type="text"] {
   width: 30%;
   height: 45px;
   box-shadow: none;
-  background-color: rgb(39, 75, 47);
+  background-color: rgb(89, 179, 211);
   color: white;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -96,6 +97,8 @@ input[type="text"] {
   width: 100% !important;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
+  box-shadow: 6px 5px 5px rgb(101, 101, 101);
+  z-index: 1;
 }
 .navbarTitle {
   width: 100% !important;
@@ -108,4 +111,37 @@ input[type="text"] {
   flex-direction: row;
   justify-content: space-around;
   padding-bottom: 2%;
+}
+.signUpButton {
+  width: 30%;
+  height: 40px;
+  background-color:rgb(89, 179, 211); 
+  border: none;
+  border-radius: 10px;
+  font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+.signUpButtonContainer {
+  padding-top: 5%;
+  position: relative;
+  left: 6%;
+}
+#signUpInput {
+  background-color: #30343c;
+  border: none;
+  border-radius: none;
+  height: 40px;
+}
+.signUpForm {
+  list-style: none;
+  width: 95% !important;
+}
+.signUpFormContainer {
+  margin: 0 auto;
+}
+.labelText {
+  float: left;
+  margin-left: 4%;
+  padding: 2%;
 }
