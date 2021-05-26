@@ -12,6 +12,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.forgotPasswordForm {
+  width: 90%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.forgotPasswordContainer li {
+  list-style: none;
+}
+.forgotPasswordLabel {
+  float: left;
+  margin-left: 2%;
+  padding: 5%;
+}
 .formFooter {
   display: flex;
   justify-content: center;
@@ -31,25 +44,30 @@ code {
   padding-top: 15%;
 }
 .homepageLoginButton {
-  height: 40px;
-  width: 90px;
-  border-radius: 5px;
+  width: 30%;
+  height: 45px;
+  box-shadow: none;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  background-color: rgb(89, 179, 211);
+  font-weight: bold;
   border: 0;
-  color: white;
-  letter-spacing: 1px;
-  transform: translate3d(0, 0, 0);
-  transition: .1s background,
-  .1s transform;
-  font: 400 1.125em/1.5 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  position: relative;
+  padding:.30rem;
+  border-radius:3px;
+  border: 2px solid rgb(89, 179, 211);
+  color:rgb(89, 179, 211);
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition:.2s ease-in;
+  font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 input[type="text"] {
   width: 90%;
-  color: grey;
+  background-color: #30343c;
+  border: none;
+  height: 40px;
   border-radius: 10px;
-  height: 30px;
 }
 .login {
   display: flex;
@@ -58,16 +76,22 @@ input[type="text"] {
   color: white;
 }
 .loginButton {
-  border-radius: 10px;
   width: 30%;
   height: 45px;
   box-shadow: none;
-  background-color: rgb(89, 179, 211);
-  color: white;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
   border: 0;
+  padding:.35rem;
+  border-radius:3px;
+  border: 2px solid rgb(89, 179, 211);
+  color:rgb(89, 179, 211);
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition:.2s ease-in;
   font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 .loginForm {
@@ -85,25 +109,30 @@ input[type="text"] {
   padding-top: 5%;
   font-size: 1.2rem;
 }
+.logo {
+  height: 200px;
+  width: 200px;
+}
 .menu-item {
   text-decoration: none;
-  color: #282c34;
+  color: rgb(89, 179, 211);
   font-size: 1.1rem;
 }
 .navbar {
   height: 100% !important;
-  background: white;
-  color: #282c34;
+  background: transparent;
+  color: rgb(89, 179, 211);
   width: 100% !important;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
-  box-shadow: 6px 5px 5px rgb(101, 101, 101);
+  /* box-shadow: 6px 5px 5px rgb(101, 101, 101); */
   z-index: 1;
+  border-bottom: 2px solid rgb(89, 179, 211);
 }
 .navbarTitle {
   width: 100% !important;
   margin: 0 auto;
-  font-size: 0.75rem;
+  font: 0.7rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 .navbarMenuItems {
   margin: 0 auto;
@@ -114,13 +143,22 @@ input[type="text"] {
 }
 .signUpButton {
   width: 30%;
-  height: 40px;
-  background-color:rgb(89, 179, 211); 
-  border: none;
-  border-radius: 10px;
-  font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  color: white;
+  height: 45px;
+  box-shadow: none;
+  font-size: 1.2rem;
   text-transform: uppercase;
+  font-weight: bold;
+  border: 0;
+  padding:.35rem;
+  border-radius:3px;
+  border: 2px solid rgb(89, 179, 211);
+  color:rgb(89, 179, 211);
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition:.2s ease-in;
+  font: 400 1.5rem 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 }
 .signUpButtonContainer {
   padding-top: 5%;

@@ -28,6 +28,12 @@ export default function SignUp() {
                             </label>
                         </li>
                         <li className="signUpForm">
+                            <input id="signUpInput" className="signUpPasswordConfirmation" type="text"></input>
+                            <label className="labelText" for="password">
+                                Repeat Password
+                            </label>
+                        </li>
+                        <li className="signUpForm">
                             <input id="signUpInput" className="signUpPosition" type="text"></input>
                             <label className="labelText" for="position">
                                 Position

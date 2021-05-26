@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="navbarTitle">
-        <h1>North Star Arms Testing Portal</h1>
+        
       </div>
       <div className="navbarMenuItems">
         <Link className="menu-item" to="/">

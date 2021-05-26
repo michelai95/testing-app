@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Submit from './Components/Submit'
 
 export default function Login() {
   return (
@@ -18,9 +19,7 @@ export default function Login() {
             </li>
           </ul>
         </form>
-        <div className="loginButtons">
-          <button className="loginButton" type="submit">Submit</button>
-        </div>
+        <Submit />
         <div className="formFooter">
           <Link className="signUpLink" className="formFooterLink" to="/SignUp">Sign Up</Link>
           <Link className="forgotPassword" className="formFooterLink" to="/ForgotPassword">Forgot Password?</Link>
